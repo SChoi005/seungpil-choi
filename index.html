@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seungpil Choi</title>
+    <link rel="icon" type="image/jpeg" href="IMG_9518.jpeg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__logo">Seungpil Choi</div>
+      <nav class="nav__links">
+        <a href="#about">About</a>
+        <a href="#projects">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero__content">
+          <button
+            type="button"
+            class="hero__photo-button"
+            aria-label="Open profile photo"
+            aria-haspopup="dialog"
+            aria-controls="photo-modal"
+          >
+            <img src="IMG_9518.jpeg" alt="Portrait of Seungpil Choi" class="hero__photo" />
+          </button>
+          <p class="hero__eyebrow">PhD Student · University of Minnesota ECE</p>
+          <h1 class="hero__title">Seungpil Choi</h1>
+          <p class="hero__subtitle">
+            My research interests include signal processing, computer vision, medical image
+            analysis, and deep reinforcement learning for medical and 3D imaging.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View research</a>
+          </div>
+          <div class="hero__links">
+            <a href="CV_SeungpilChoi.pdf" target="_blank" rel="noreferrer">View CV</a>
+            <a href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section__header">
+          <h2>About</h2>
+        </div>
+        <div class="grid grid--1">
+          <div class="card">
+            <h3>Education</h3>
+            <ul class="list list--bullet list--flow">
+              <li>
+                <span class="list__title">University of Minnesota, United States</span>
+                <span class="list__meta">PhD in Electrical Engineering · Fall 2026 – Present</span>
+              </li>
+              <li>
+                <span class="list__title">Hankuk University of Foreign Studies (HUFS), South Korea</span>
+                <span class="list__meta">B.S. in Computer and Electronic System Engineering · Mar 2019 – Aug 2024</span>
+                <ul class="list list--bullet list--nested">
+                  <li>
+                    <span class="list__title">Korean Military Service</span>
+                    <span class="list__meta">Mar 2021 – Sep 2022</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Experience</h3>
+            <ul class="list list--bullet list--flow">
+              <li>
+                <span class="list__title">IMAGINE Lab, University of Minnesota</span>
+                <span class="list__meta">PhD Student · Fall 2026 – Present</span>
+                <p class="list__desc">Advisor: Mehmet Akcakaya</p>
+              </li>
+              <li>
+                <span class="list__title">Machine Intelligence Lab, HUFS</span>
+                <span class="list__meta">Undergraduated Researcher · Sep 2022 – Feb 2026</span>
+                <p class="list__desc">Advisor: Byunghwan Jeon</p>
+                <ul class="list list--bullet list--nested">
+                  <li>
+                    <span class="list__title">
+                      Reinforcement Learning-based Centerline Tracking for Enhancing Mandibular Canal
+                      Segmentation
+                    </span>
+                    <span class="list__meta">Oct 2023 – Mar 2025</span>
+                    <!-- <p class="list__desc">
+                      Developed RL systems for centerline tracking and landmark detection in dental
+                      CT images to improve segmentation robustness.
+                    </p> -->
+                  </li>
+                  <li>
+                    <span class="list__title">Deep Reinforcement Learning for Intraoral Scan-CT Registration</span>
+                    <span class="list__meta">Sep 2022 – Oct 2023</span>
+                    <!-- <p class="list__desc">
+                      Implemented feature extraction and RL-based registration between intraoral-scan
+                      meshes and CT images, leading to a Pattern Recognition publication.
+                    </p> -->
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section__header">
+          <h2>Publications</h2>
+          <p>· † indicates co-first author</p>
+        </div>
+        <div class="grid grid--1">
+          <article class="card project-card project-card--media">
+            <button
+              type="button"
+              class="project-card__media-button"
+              aria-label="Open enlarged preview for intraoral-scan mesh and CT registration"
+            >
+              <img
+                class="project-card__media"
+                src="registration.gif"
+                alt="Preview animation for intraoral-scan mesh and CT registration"
+                loading="lazy"
+              />
+            </button>
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <p class="project-card__meta">Pattern Recognition <span>2025</span></p>
+                <h3>Deep Reinforcement Learning for Efficient Registration between Intraoral-scan Meshes and CT Images</h3>
+              </div>
+              <p class="project-card__authors">
+                <strong>Authors</strong>
+                <span>Seungpil Choi†, Seoyeon Jang†, Sunghee Jung, Heon Jae Cho, Byunghwan Jeon*</span>
+              </p>
+              <div class="project-card__links">
+                <a href="https://www.sciencedirect.com/science/article/pii/S0031320325001621" target="_blank" rel="noreferrer">View paper</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card project-card--media">
+            <button
+              type="button"
+              class="project-card__media-button"
+              aria-label="Open enlarged preview for mandibular canal centerline tracking"
+            >
+              <img
+                class="project-card__media"
+                src="mandibular-canal-tracking.gif"
+                alt="Preview animation for mandibular canal centerline tracking"
+                loading="lazy"
+              />
+            </button>
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <p class="project-card__meta">IEEE Access <span>2025</span></p>
+                <h3>Reinforcement Learning-Based Centerline Tracking with Cross-Sectional Similarity for Enhancing Mandibular Canal Segmentation</h3>
+              </div>
+              <p class="project-card__authors">
+                <strong>Authors</strong>
+                <span>Seoyeon Jang†, Seungpil Choi†, Byunghwan Jeon*</span>
+              </p>
+              <div class="project-card__links">
+                <a href="https://ieeexplore.ieee.org/abstract/document/11202909" target="_blank" rel="noreferrer">View paper</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="contact">
+        <div class="section__header">
+          <h2>Contact</h2>
+        </div>
+        <div class="contact__grid">
+          <a class="contact-tile" href="mailto:choi1131@umn.edu">
+            <span class="contact-tile__label">Email</span>
+            <strong class="contact-tile__value">choi1131@umn.edu</strong>
+          </a>
+          <a class="contact-tile" href="https://github.com/SChoi005" target="_blank" rel="noreferrer">
+            <span class="contact-tile__label">GitHub</span>
+            <strong class="contact-tile__value">github.com/SChoi005</strong>
+          </a>
+          <a
+            class="contact-tile"
+            href="https://www.linkedin.com/in/seungpil-choi-860338218?originalSubdomain=kr"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="contact-tile__label">LinkedIn</span>
+            <strong class="contact-tile__value">linkedin.com/in/seungpil-choi-860338218</strong>
+          </a>
+          <a
+            class="contact-tile"
+            href="https://scholar.google.com/citations?user=aWqUYGoAAAAJ&hl=en"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="contact-tile__label">Google Scholar</span>
+            <strong class="contact-tile__value">scholar.google.com/citations?user=aWqUYGoAAAAJ</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Seungpil Choi. All rights reserved.</p>
+    </footer>
+
+    <div
+      class="photo-modal"
+      id="photo-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="photo-modal-title"
+      hidden
+    >
+      <div class="photo-modal__backdrop" data-photo-close></div>
+      <div class="photo-modal__dialog">
+        <div class="photo-modal__header">
+          <p class="photo-modal__label" id="photo-modal-title">Seungpil Choi</p>
+          <button
+            type="button"
+            class="photo-modal__close"
+            aria-label="Close profile photo"
+            data-photo-close
+          >
+            Close
+          </button>
+        </div>
+        <img
+          src="IMG_9518.jpeg"
+          alt="Expanded portrait of Seungpil Choi"
+          class="photo-modal__image"
+        />
+      </div>
+    </div>
+
+    <div
+      class="media-modal"
+      id="media-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="media-modal-title"
+      hidden
+    >
+      <div class="media-modal__backdrop" data-media-close></div>
+      <div class="media-modal__dialog">
+        <div class="media-modal__header">
+          <p class="media-modal__label" id="media-modal-title">Publication Preview</p>
+          <button
+            type="button"
+            class="media-modal__close"
+            aria-label="Close enlarged preview"
+            data-media-close
+          >
+            Close
+          </button>
+        </div>
+        <img class="media-modal__image" src="" alt="" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
